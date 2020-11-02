@@ -30,12 +30,12 @@ func registerRoutes() {
 	/**
 	注册静态资源目录
 	*/
-	r.StaticFS("/static", http.Dir("../front"))
+	r.StaticFS("/eco8", http.Dir("../front"))
 
-	/**
-	注册 /common/v1 API
-	*/
+	// /common/v1 API
 	routes.CommonApi(r.Group("/common"))
+	// /portal/v1 API
+	routes.PortalApi(r.Group("/portal"))
 }
 
 func initServer() {

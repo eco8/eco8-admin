@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eco8 | Login</title>
+    <link rel="stylesheet" href="/eco8/public/css/main.css" />
+    <style>
+      .login-bg {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .login-publicity {
+        width: 400px;
+        height: 300px;
+      }
+
+      .login-box {
+        width: 300px;
+        height: 300px;
+      }
+
+      .login-header h3 {
+        text-align: center;
+        line-height: 30px;
+      }
+
+      .login-item {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 10px;
+      }
+
+      .login-item label {
+        display: inline-block;
+        width: 80px;
+        text-indent: 10px;
+      }
+
+      .login-item input {
+        width: calc(100% - 100px);
+      }
+
+      .login-item button {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-bg">
+      <div class="login-publicity">宣传图片</div>
+      <div class="login-box">
+        <div class="login-header">
+          <h3>Eco8-Admin</h3>
+        </div>
+        <div class="login-item">
+          <label for="eco8-username">Username</label>
+          <input id="eco8-username" type="username" name="eco8-username" />
+        </div>
+        <div class="login-item">
+          <label for="eco8-password">Password</label>
+          <input id="eco8-password" type="password" name="eco8-password" />
+        </div>
+        <div class="login-item"><button onclick="login()">登录</button></div>
+      </div>
+    </div>
+    <script src="/eco8/public/js/axios.min.js"></script>
+    <script>
+      function login() {
+        console.log('xxxxxxxxxxxxx');
+        axios
+          .post('/portal/login', {
+            username: document.getElementById('eco8-username').value,
+            password: document.getElementById('eco8-password').value,
+          })
+          .then(({ data }) => {
+            console.log(data);
+            if (data.data.length > 0) {
+              sessionStorage.setItem('auth', data.data);
+              window.location.href = 'http://localhost:10002/eco8/';
+            }
+          })
+          .catch(err => {
+            console.error(err);
+          });
+      }
+    </script>
+  </body>
+</html>
