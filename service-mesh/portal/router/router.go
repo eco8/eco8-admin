@@ -5,6 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
+	"os"
 	"portal/router/routes"
 )
 
@@ -30,7 +31,11 @@ func registerRoutes() {
 	/**
 	注册静态资源目录
 	*/
-	r.StaticFS("/portal", http.Dir("../frontend/portal"))
+	staticDir := "../frontend/portal"
+	if os.Getenv("env") == "prod" {
+		staticDir = "./frontend/portal"
+	}
+	r.StaticFS("/portal", http.Dir(staticDir))
 
 	// /portal/v1 API 内部服务接口放到 service 中
 	routes.PortalApi(r.Group("/portal-service"))
