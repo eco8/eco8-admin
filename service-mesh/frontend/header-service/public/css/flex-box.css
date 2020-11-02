@@ -5,3 +5,11 @@ header {
   border-style: solid;
   border-color: #cacfd8;
 }
+
+.main {
+  height: calc(100% - 98px);
+}
+
+footer {
+  height: 48px;
+}

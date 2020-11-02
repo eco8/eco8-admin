@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b1c2569d-f116-4c55-95a4-050c47d519ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/common-api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/portal-api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/user-center.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/routes/common.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/routes/portal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session/session.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/header-service/public/css/flex-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/header-service/public/css/flex-box.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/.idea/portal.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/controller/common-api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/controller/portal-api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/portal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/model/user-center.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/portal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/router/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/router/routes/common.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/router/routes/portal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/portal/session/session.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../header-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../header-service/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="D:\usr\local\go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1jjDab0PWULLp6h9InMLXaoNXVK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build copyright" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="copyright" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="copyright" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build copyright" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="680" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604308709912">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="680" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604308709912" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604311299450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604311299450" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604311299450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604311299450" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604311299450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604311299450" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604311299450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604311299450" />
+  </component>
+</project>
