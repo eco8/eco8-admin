@@ -84,18 +84,18 @@
   <div class="app-list-icon">App</div>
   <div class="logo splite-line right harf">logo</div>
   <ul class="static-nav splite-line right harf">
-    <li><a href="/eco8">首页</a></li>
-    <li><a href="/views/portal">门户</a></li>
+    <li><a onclick="urlNavigator('/eco8/')">首页</a></li>
+    <li><a onclick="urlNavigator('/eco8/views/portal/')">门户</a></li>
   </ul>
   <ul class="dynamic-nav">
-    <li><a href="javascript: voud(0);">导航一</a></li>
-    <li><a href="javascript: voud(0);">导航二</a></li>
+    <li><a onclick="urlNavigator('/eco8/views/user-center/user-management.html')">用户管理</a></li>
+    <li><a onclick="urlNavigator('/eco8/views/system-management/navigation-management.html')">导航管理</a></li>
     <li><a href="javascript: voud(0);">导航三</a></li>
   </ul>
 
   <div class="user-box">
     <!-- 用户头像 -->
-    <div class="user-avatar">头像</div>
+    <div class="user-avatar">ER</div>
     <div class="user-name">Eric</div>
     <!-- 更多 -->
     <div class="user-more">^</div>
@@ -134,5 +134,9 @@
       });
       top.location.href = '/eco8/views/user-center/login.html';
     }
+  }
+
+  function urlNavigator(url) {
+    top.location.href = url;
   }
 </script>

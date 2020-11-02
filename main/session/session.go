@@ -2,7 +2,7 @@ package session
 
 import (
 	"fmt"
-	"github.com/gin_learing/session/gin_session"
+	//"github.com/gin_learing/session/gin_session"
 )
 
 func init() {
