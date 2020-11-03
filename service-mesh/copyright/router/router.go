@@ -4,6 +4,7 @@ import (
 	"copyright/router/routes"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/unrolled/secure"
 	"log"
 	"net/http"
 	"os"
@@ -53,6 +54,22 @@ func initServer() {
 	r = gin.Default()
 
 	/**
+	开启https
+	*/
+	r.Use(func(c *gin.Context) {
+		secureMiddleware := secure.New(secure.Options{
+			SSLRedirect: true,
+		})
+		err := secureMiddleware.Process(c.Writer, c.Request)
+
+		// If there was an error, do not continue.
+		if err != nil {
+			return
+		}
+		c.Next()
+	})
+
+	/**
 	测试gin路由
 	*/
 	r.GET("/eco8-admin", func(c *gin.Context) {
@@ -64,7 +81,8 @@ func Run(host string, port uint16) {
 	/**
 	启动服务
 	*/
-	if err := r.Run(fmt.Sprintf("%s:%d", host, port)); err != nil {
+	//if err := r.Run(fmt.Sprintf("%s:%d", host, port)); err != nil {
+	if err := r.RunTLS(fmt.Sprintf("%s:%d", host, port), "ssl/eco8.co.pem", "ssl/eco8.co.key"); err != nil {
 		log.Fatalln(err.Error())
 	} else {
 		log.Printf(fmt.Sprintf("Server started at %s:%d", host, port))

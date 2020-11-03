@@ -20,41 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a660803a-ed70-4684-99e9-261561fabd8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../copyright/.idea/copyright.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/controller/common-api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/controller/portal-api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/model/user-center.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/router/router.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/router/routes/common.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/router/routes/portal.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../copyright/session/session.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssl/eco8.co.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssl/eco8.co.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portal/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portal/ssl/eco8.co.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portal/ssl/eco8.co.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../copyright/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../copyright/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../copyright/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../copyright/router/router.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/header-service/public/css/flex-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/header-service/public/css/flex-box.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/.idea/portal.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/controller/common-api.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/controller/portal-api.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/portal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/model/user-center.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/portal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/router/router.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/router/routes/common.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/router/routes/portal.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/portal/session/session.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header-service" beforeDir="false" afterPath="$PROJECT_DIR$/header-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portal/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portal/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portal/portal" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/portal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portal/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/router/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +91,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -118,21 +101,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604308667098" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604308193758">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604312748385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604308193758" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604308193757">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604312748385" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604312748384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604308193757" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604308193757">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604312748384" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604312748384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604308193757" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604308193757">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604312748384" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604312748384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604308193757" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604312748384" />
   </component>
 </project>

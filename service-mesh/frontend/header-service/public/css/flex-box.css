@@ -7,7 +7,7 @@ header {
 }
 
 .main {
-  height: calc(100% - 98px);
+  height: calc(100vh - 98px);
 }
 
 footer {
