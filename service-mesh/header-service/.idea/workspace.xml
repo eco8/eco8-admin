@@ -20,22 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a660803a-ed70-4684-99e9-261561fabd8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ssl/eco8.co.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssl/eco8.co.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../portal/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../portal/ssl/eco8.co.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../portal/ssl/eco8.co.pem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../copyright/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../copyright/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../copyright/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../copyright/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/header-service/public/css/flex-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/header-service/public/css/flex-box.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header-service" beforeDir="false" afterPath="$PROJECT_DIR$/header-service" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portal/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portal/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portal/portal" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/portal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../portal/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/router/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

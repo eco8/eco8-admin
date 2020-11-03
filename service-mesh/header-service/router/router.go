@@ -3,11 +3,11 @@ package router
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/unrolled/secure"
 	"header-service/router/routes"
 	"log"
 	"net/http"
 	"os"
-	"github.com/unrolled/secure"
 )
 
 var r *gin.Engine
