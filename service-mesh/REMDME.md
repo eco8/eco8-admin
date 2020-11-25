@@ -10,4 +10,5 @@
     7. copyright         ::10006    备案说明
     8. user-service      ::10007    用户管理，用户中心
     9. login-service     ::10008    登录管理
+    10. frontend-growth  ::10009    前端成长课程
 </pre>
