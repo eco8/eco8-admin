@@ -1,0 +1,16 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /gin/*filepath            --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] HEAD   /gin/*filepath            --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] GET    /                         --> eric-portal/router.indexPage (4 handlers)
+[GIN-debug] GET    /favicon.ico              --> eric-portal/router.favicon (4 handlers)
+[GIN-debug] GET    /api/v1/user/login        --> eric-portal/controller.(*User).Login.func1 (6 handlers)
+[GIN-debug] GET    /api/v1/resources/login   --> eric-portal/controller.(*User).Login.func1 (6 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:3002
+[GIN] 2020/11/29 - 18:07:11 | 200 |       976.2µs |             ::1 | GET      "/api/v1/user/login"
+[GIN] 2020/11/29 - 18:07:20 | 200 |            0s |             ::1 | GET      "/api/v1/user/login"
+[GIN] 2020/11/29 - 18:07:47 | 401 |            0s |             ::1 | GET      "/api/v1/resources/login"

@@ -1,0 +1,39 @@
+admin: # 测试用用户名
+  username: Eric
+  password: a1111111
+mysql: # mysql-sql 数据库连接
+  host: 192.168.99.100
+  port: 3306
+  database: frontend-growth
+  userName: eric
+  password: 123456
+  charset: utf8
+server:
+  host: 0.0.0.0
+  port: 3002
+logger:
+  dir: logs
+  filePrefix: gin
+redis:
+  host: 192.168.99.100
+  port: 6379
+  username:
+  password: # 连接密码
+  maxFreeConnections: 10 # 最大连接数
+  protocol: tcp # 传输协议
+session:
+  secretKey: secret123456 # session 加密密钥
+  sessionKey: sessionKey # session的Key
+  path: / # 获取session只能获取路径大于等于 path 的路由下的session
+  domain: # 设置多个域名会让多个子域名共享同一个session，例如：www.eco8.co;api.eco8.co
+  maxAge: 1800 # session过期时间 单位：秒
+  secure: false # 当设置为true时，表示创建的 Cookie 会被以安全的形式向服务器传输，也就是只能在 HTTPS 连接中被浏览器传递到服务器端进行会话验证，如果是 HTTP 连接则不会传递该信息，所以不会被窃取到Cookie 的具体内容。
+  httpOnly: false # 如果在Cookie中设置了"HttpOnly"属性，那么通过程序(JS脚本、Applet等)将无法读取到Cookie信息，这样能有效的防止XSS攻击
+  # 通过限制第三方cookie来用来防止 CSRF 攻击和用户追踪，减少安全风险，可以设置三个值：Strict、Lax、None。
+  # Strict最为严格，完全禁止第三方 Cookie
+  # Lax规则稍稍放宽，大多数情况也是不发送第三方 Cookie，但是导航到目标网址的 Get 请求除外，基本杜绝了CSRF
+  # Chrome 计划将Lax变为默认设置。这时，网站可以选择显式关闭SameSite属性，将其设为None。不过，前提是必须同时设置Secure属性（Cookie 只能通过 HTTPS 协议发送），否则无效。
+  # Strict: 3
+  # Lax: 2
+  # None: 1
+  sameSite: 1
