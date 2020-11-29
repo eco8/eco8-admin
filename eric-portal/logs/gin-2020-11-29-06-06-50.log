@@ -1,2 +1,5 @@
 [INFO]  2020/11/29 18:06:50 ---------------------- log start logs/gin-2020-11-29-06-06-50.log ----------------------
 [INFO]  2020/11/29 18:06:50 Gin Router Init!
+[TRACE] 2020/11/29 18:07:11 Http Request URL: /api/v1/user/login, Request-Id: aafc40c1afd0e7b05188fddd86c7411f
+[TRACE] 2020/11/29 18:07:20 Http Request URL: /api/v1/user/login, Request-Id: 1d33fcb8be1ce4dff7dfadf8d553a578
+[TRACE] 2020/11/29 18:07:47 Http Request URL: /api/v1/resources/login, Request-Id: adb9bbb08eeed8c74bd5820cff9dcb13

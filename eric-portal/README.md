@@ -74,3 +74,6 @@
 7. services 业务模块的应用逻辑应用设计
 8. repository 数据层
 9. model 数据库ORM实现
+10. logs 日志记录
+11. frontend 前端工程目录
+

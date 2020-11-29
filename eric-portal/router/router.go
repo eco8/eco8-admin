@@ -14,13 +14,19 @@ import (
 
 var router *gin.Engine
 
+func setRouter() {
+	api := router.Group("/api").Group("/v1")
+	routes.User(api)
+	routes.Resources(api)
+}
+
 func init() {
 	log.Info("Gin Router Init!")
 }
 
 func indexPage(c *gin.Context) {
 	//c.String(http.StatusOK, "Index Page!")
-	c.Redirect(http.StatusMovedPermanently, "/gin")
+	c.Redirect(http.StatusMovedPermanently, "/portal")
 }
 
 func InitServer() {
@@ -37,7 +43,7 @@ func InitServer() {
 	routerMiddleware.RedisSession(router)
 
 	// 静态文件访问目录
-	router.Static("/gin", "static")
+	router.Static("/portal", "static")
 
 	// 测试首页
 	router.GET("/", indexPage)
@@ -60,15 +66,8 @@ func InitServer() {
 	}
 }
 
-func setRouter() {
-	//api := router.Group("/api/v1")
-	api := router.Group("/api").Group("/v1")
-	routes.User(api)
-	routes.Resources(api)
-}
-
 func favicon(c *gin.Context) {
-	c.Redirect(http.StatusMovedPermanently, "/gin/assets/ico/favicon.ico")
+	c.Redirect(http.StatusMovedPermanently, "/portal/assets/ico/favicon.ico")
 }
 
 func writeGinLog() {

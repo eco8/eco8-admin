@@ -7,6 +7,7 @@ import (
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"strings"
 )
 
 func Authorize() gin.HandlerFunc {
@@ -33,6 +34,9 @@ func Authorize() gin.HandlerFunc {
 		exist := false
 		for _, item := range NotAllowAuthList {
 			if item == url {
+				exist = true
+				break
+			} else if strings.Index(url, item) == -1 {
 				exist = true
 				break
 			}

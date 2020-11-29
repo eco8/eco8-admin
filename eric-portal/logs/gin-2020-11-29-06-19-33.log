@@ -1,0 +1,3 @@
+[INFO]  2020/11/29 18:19:33 ---------------------- log start logs/gin-2020-11-29-06-19-33.log ----------------------
+[INFO]  2020/11/29 18:19:33 Gin Router Init!
+[TRACE] 2020/11/29 18:23:31 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: 5a68583c3e2f3e0aad55d2473cd8ef87

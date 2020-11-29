@@ -1,0 +1,14 @@
+[INFO]  2020/11/29 18:23:42 ---------------------- log start logs/gin-2020-11-29-06-23-42.log ----------------------
+[INFO]  2020/11/29 18:23:42 Gin Router Init!
+[TRACE] 2020/11/29 18:39:50 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: 70564429ae51680c944896b5d26b4ad7
+[TRACE] 2020/11/29 18:39:51 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: d7626e05d7a77512adce14792705dafa
+[TRACE] 2020/11/29 18:39:51 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: dd74b972eb3c961c219340f56208a220
+[TRACE] 2020/11/29 18:39:51 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: d74a90b02b8a99ec39b9c4eef310b3ff
+[TRACE] 2020/11/29 18:39:51 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: ec0bd9bbea0483f88fe6f01e1c21a90d
+[TRACE] 2020/11/29 18:39:52 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: a70b9bd33bf656934d1e6a6f2e85f2ba
+[TRACE] 2020/11/29 18:39:52 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: 94dd12936662a3bd38e3bc872802b542
+[TRACE] 2020/11/29 18:39:52 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: 5d68320cbc2482554f182ebcb7a3fae3
+[TRACE] 2020/11/29 18:39:52 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: 8c15c3f1bcf875de57e73be74f4715c2
+[TRACE] 2020/11/29 18:39:52 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: 5380ac2563845c07c4702fa65df2a351
+[TRACE] 2020/11/29 18:39:52 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: 91dc31e6d6d71a3da5ace0e21d980260
+[TRACE] 2020/11/29 18:39:53 Http Request URL: /gin/assets/ico/favicon.ico, Request-Id: da9454f2e97417da3a6ffa93379a194c
