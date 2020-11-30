@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "eric-portal/mysql"
 	"eric-portal/router"
 	"eric-portal/service/config"
 	"fmt"

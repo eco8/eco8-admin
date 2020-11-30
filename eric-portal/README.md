@@ -76,4 +76,7 @@
 9. model 数据库ORM实现
 10. logs 日志记录
 11. frontend 前端工程目录
+12. entity 数据库 model 目录
+13. mysql
+
 
