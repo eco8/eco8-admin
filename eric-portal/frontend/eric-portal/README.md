@@ -27,5 +27,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-1. 设备评估详情页面弹窗修
-2. 
+1. 设备评估详情页面弹窗替换
+2. 磁盘使用率等图表组件修改
+3. 系统评估页面同步添加等待提示功能
+4. 新建和追加评估系统表单性能优化: transfer 组件修改为分页格式的复选框组件
+5. 设备评估列表编辑功能模态框修改为可拖拽组件
+6. 设备评估详情列表编辑功能模态框修改为可拖拽组件
+7. 测试问题修改

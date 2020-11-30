@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { NavItem } from './header.vo';
 
 @Component({
@@ -21,16 +21,13 @@ export class HeaderComponent implements OnInit {
   ];
   public currentUrl: string = '';
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
+  constructor(private router: Router) {
     this.router.events.subscribe(e => {
-      console.log('===============\n', e);
       if (e instanceof NavigationEnd) {
         this.currentUrl = e.url;
       }
     });
   }
 
-  ngOnInit(): void {
-    console.log('this.activatedRoute.snapshot: ', this.activatedRoute.snapshot);
-  }
+  ngOnInit(): void {}
 }

@@ -16,6 +16,11 @@ export class PortalComponent implements OnInit {
      */
     FrameworkService.setAnnouncement({
       notice: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+      period: 15000,
+      type: InteractiveTip.success,
+    });
+    FrameworkService.setAnnouncement({
+      notice: 'xwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww',
       period: 10000,
       type: InteractiveTip.success,
     });

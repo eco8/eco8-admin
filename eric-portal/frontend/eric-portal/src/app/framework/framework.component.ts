@@ -1,8 +1,5 @@
-import { not } from '@angular/compiler/src/output/output_ast';
 import { Component, Input, OnInit } from '@angular/core';
-import { clear } from 'console';
 import { InteractiveTip } from '../library/model/component.vo';
-import { FrameworkModule } from './framework.module';
 import { AnnouncementStruct, FrameworkService } from './framework.service';
 
 @Component({
@@ -45,20 +42,21 @@ export class FrameworkComponent implements OnInit {
     period: 0,
     type: InteractiveTip.info,
   };
-  private globalTimer = null;
 
   constructor() {
     FrameworkService.announcement.subscribe((res: AnnouncementStruct) => {
-      // console.log('全局公告: ', res);
+      console.log('FrameworkService.announcement: ', res);
       this.publicNotice = res;
 
       if (res.period > 0) {
-        if (this.globalTimer) {
-          clearTimeout(this.globalTimer);
-          this.globalTimer = null;
-        }
-        this.globalTimer = setTimeout(() => {
+        // if (FrameworkService.announcementTimer) {
+        //   clearTimeout(FrameworkService.announcementTimer);
+        //   FrameworkService.announcementTimer = null;
+        // }
+        FrameworkService.announcementTimer = setTimeout(() => {
           this.publicNotice.period = 0;
+          FrameworkService.announcementTimer = null;
+          if (FrameworkService.announcementList.length > 0) FrameworkService.setAnnouncement(FrameworkService.announcementList.shift());
         }, res.period);
       }
     });
@@ -73,5 +71,24 @@ export class FrameworkComponent implements OnInit {
     //   period: 3000,
     //   type: InteractiveTip.success,
     // });
+
+    if (FrameworkService.announcementList.length > 0) {
+    }
+  }
+
+  private initPublicAnnouncement(ann: AnnouncementStruct) {
+    if (FrameworkService.announcementTimer) {
+      this.publicNotice = FrameworkService.publicNotice;
+    } else {
+      this.publicNotice = FrameworkService.announcementList.shift();
+      if (this.publicNotice.period > 0) {
+        FrameworkService.announcementTimer = setTimeout(() => {
+          clearTimeout(FrameworkService.announcementTimer);
+          FrameworkService.announcementTimer = null;
+        }, this.publicNotice.period);
+      } else if (this.publicNotice.period === -1) {
+        FrameworkService.announcementTimer = -1;
+      }
+    }
   }
 }
