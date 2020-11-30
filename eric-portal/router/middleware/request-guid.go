@@ -5,6 +5,9 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+/**
+	后续可以在此追加各种安全校验等
+ */
 func FormatRequest() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		requestId := guid.UniqueId()

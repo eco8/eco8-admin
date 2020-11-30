@@ -6,17 +6,9 @@ import (
 )
 
 func User(router *gin.RouterGroup) {
-	user := controller.User{}
-	cluster := router.Group("user")
+	user := controller.User{} // controller 管理者、控制器、公司财务总管
+	cluster := router.Group("user") // relative 相对的， relativePath 相对路径
 	{
-		cluster.GET("login", user.Login())
-	}
-}
-
-func Resources(router *gin.RouterGroup) {
-	user := controller.User{}
-	cluster := router.Group("resources")
-	{
-		cluster.GET("login", user.Login())
+		cluster.GET("test", user.Login())
 	}
 }

@@ -15,9 +15,9 @@ import (
 var router *gin.Engine
 
 func setRouter() {
-	api := router.Group("/api").Group("/v1")
-	routes.User(api)
-	routes.Resources(api)
+	apiV1 := router.Group("/api").Group("/v1")
+	routes.User(apiV1)
+	routes.Resources(apiV1)
 }
 
 func init() {
@@ -67,7 +67,8 @@ func InitServer() {
 }
 
 func favicon(c *gin.Context) {
-	c.Redirect(http.StatusMovedPermanently, "/portal/assets/ico/favicon.ico")
+	//c.Redirect(http.StatusMovedPermanently, "/portal/assets/ico/favicon.ico")
+	c.File("favicon.ico")
 }
 
 func writeGinLog() {
