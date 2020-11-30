@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+/** 清除容器的内外边距 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  &:focus {
+    outline: none;
+  }
+}
+
+/** 清浮动 */
+.clearfix {
+  &::before,
+  &::after {
+    display: table;
+    content: '';
+  }
+  &::after {
+    clear: both;
+  }
+}

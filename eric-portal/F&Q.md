@@ -3,3 +3,8 @@
     - 一个设置无符号另一个默认（有符号）就会冲突
 
 2. Go 连接Mysql需要 `github.com/go-sql-driver/mysql` 注入mysql驱动到 `database/sql` 包中去，因此需要在import中引入 `_ "github.com/go-sql-driver/mysql"`
+
+3. angular 中，`Router.forRoot` 和 `Router.forChild` 的使用方法及区别
+    - forRoot 在根节点设置，代表跟路由
+    - forChild 在子节点设置，根节点引入设置forChild的模块即可加载子路由
+    

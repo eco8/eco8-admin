@@ -1,0 +1,30 @@
+<header class="e-header">
+  <div class="e-logo" [routerLink]="['/home']"><img src="/api/v1/portal/eco8-logo" alt="" /></div>
+
+  <!-- 固定导航 -->
+  <div class="e-fixed-navigation">
+    <ul>
+      <li class="e-header-menu-item" [ngClass]="{ active: currentUrl.indexOf('/home') === 0 }" [routerLink]="['/home']">首页</li>
+    </ul>
+  </div>
+
+  <!-- 动态导航 -->
+  <div class="e-dynamic-navigation">
+    <ul>
+      <li
+        class="e-header-menu-item"
+        [ngClass]="{ active: currentUrl.indexOf(item.url) === 0 }"
+        *ngFor="let item of navs"
+        [routerLink]="[item.url]"
+      >
+        {{ item.title }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- 用户菜单 -->
+  <div class="e-user-navigation">用户菜单</div>
+
+  <!-- 系统导航 -->
+  <div class="e-system-navigation">系统导航</div>
+</header>

@@ -1,0 +1,15 @@
+<!-- 公共头部 -->
+<e-header></e-header>
+
+<!-- 全局提示 -->
+<div class="global-tips" *ngIf="publicNotice.period">
+  <d-alert [closeable]="false" [cssClass]="'text-center'" [type]="publicNotice.type || 'info'">{{ publicNotice.notice }}</d-alert>
+</div>
+
+<!-- 微服务提示 -->
+<div class="global-tips" *ngIf="serviceNotice.period">
+  <d-alert [closeable]="false" [cssClass]="'text-center'" [type]="serviceNotice.type || 'info'">{{ serviceNotice.notice }}</d-alert>
+</div>
+
+<!-- 服务容器 -->
+<ng-content></ng-content>

@@ -16,6 +16,7 @@ var router *gin.Engine
 
 func setRouter() {
 	apiV1 := router.Group("/api").Group("/v1")
+	routes.Portal(apiV1) // portal 路由
 	routes.User(apiV1)
 	routes.Resources(apiV1)
 }
