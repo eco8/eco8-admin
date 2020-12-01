@@ -45,7 +45,7 @@ export class FrameworkComponent implements OnInit {
 
   constructor() {
     FrameworkService.announcement.subscribe((res: AnnouncementStruct) => {
-      console.log('FrameworkService.announcement: ', res);
+      // console.log('FrameworkService.announcement: ', res);
       this.publicNotice = res;
 
       if (res.period > 0) {

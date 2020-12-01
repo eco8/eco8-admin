@@ -1113,6 +1113,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@devui-design/icons@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/@devui-design/icons/download/@devui-design/icons-1.2.0.tgz#e149d909541167c14103f38c090e4458c0dfba09"
+  integrity sha1-4UnZCVQRZ8FBA/OMCQ5EWMDfugk=
+
 "@istanbuljs/schema@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"

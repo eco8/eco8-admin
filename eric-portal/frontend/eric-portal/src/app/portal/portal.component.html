@@ -1,5 +1,127 @@
 <app-framework [serviceNotice]="{ notice: 'portal 公告', period: -1 }">
-  <p>portal works!</p>
-  <!-- <router-outlet></router-outlet> -->
-  <p>portal works!</p>
+  <div class="kanban-warp">
+    <!--  -->
+    <!-- portal 导航菜单 -->
+    <div class="kanban-left">
+      <!--  -->
+      <!-- 点赞系统 -->
+      <div class="my-integral-warp">
+        <div class="my-integral-label">我的点赞</div>
+        <div class="my-integral"><i class="icon icon-like-solid"></i><span>0</span></div>
+      </div>
+
+      <!-- 系统分组 -->
+      <ul class="system-group">
+        <li
+          class="menu-item"
+          *ngFor="let item of systemGroup"
+          [ngClass]="{ active: activeGroup.id === item.id }"
+          (click)="changeGroup(item)"
+        >
+          <i *ngIf="item.icon" class="icon" [ngClass]="item.icon"></i>
+          {{ item.name }}
+        </li>
+        <!-- <li class="menu-item" [ngClass]="{ active: activeGroupId === 'mine' }"><i class="icon icon-star"></i>我的关注</li>
+        <li class="menu-item" [ngClass]="{ active: activeGroupId === 'all' }"><i class="icon icon-unarchived-item"></i>所有项目</li>
+        <li class="menu-item" [ngClass]="{ active: activeGroupId === 'archived' }"><i class="icon icon-archived-item"></i>已归档项目</li>
+        <li class="menu-item" [ngClass]="{ active: activeGroupId === 'unfilled' }"><i class="icon icon-folder-2"></i>未归档项目</li> -->
+      </ul>
+
+      <!-- 自定义分组项目 -->
+      <div class="my-group-title">我的分组</div>
+      <ul class="my-group">
+        <li class="menu-item" *ngFor="let item of myGroups" [ngClass]="{ active: activeGroup.id === item.id }" (click)="changeGroup(item)">
+          <i *ngIf="item.icon" class="icon" [ngClass]="item.icon"></i>
+          {{ item.name }}
+        </li>
+      </ul>
+
+      <!-- 新建分组 -->
+      <div class="create-group-item" (click)="createGroup()"><i class="icon icon-add"></i>新建分组</div>
+    </div>
+
+    <!-- portal 内容看板 -->
+    <div class="kanban-content">
+      <!-- head -->
+      <div class="kanban-header">
+        <div class="user-name">Hello, Eric</div>
+        <div class="search-create">
+          <d-search [(ngModel)]="searchText" (searchFn)="searchProject($event)" [ngModelOptions]="{ updateOn: 'blur' }"></d-search>
+          <d-button>新建项目</d-button>
+        </div>
+      </div>
+
+      <!-- ctx -->
+      <div class="kanban-menu-title">
+        <span class="group-name">{{ activeGroup.name }}</span>
+        <div class="filter-btns">
+          <span class="sort" (mouseover)="showSortCard = true" (mouseleave)="showSortCard = false">
+            <i class="icon icon-switch route-90"></i>
+
+            <ul class="sort-project" *ngIf="showSortCard">
+              <li class="sort-criteria" [ngClass]="{ active: sortType === 'name' }" (click)="sortType = 'name'; showSortCard = false">
+                按项目名称排序
+                <i class="icon icon-sort"></i>
+              </li>
+              <li class="sort-criteria" [ngClass]="{ active: sortType === 'time' }" (click)="sortType = 'time'; showSortCard = false">
+                按创建时间排序
+                <i class="icon icon-sort"></i>
+              </li>
+              <li class="sort-criteria" [ngClass]="{ active: sortType === 'time' }" (click)="sortType = 'time'; showSortCard = false">
+                阿西吧
+                <i class="icon icon-sort"></i>
+              </li>
+            </ul>
+            <!--  -->
+          </span>
+          <span class="change-view-btn" [ngClass]="{ active: currentViewId === 'kanban' }" (click)="changeView('kanban')">
+            <i class="icon icon-more-func"></i>
+          </span>
+          <span class="change-view-btn" [ngClass]="{ active: currentViewId === 'table' }" (click)="changeView('table')">
+            <i class="icon icon-op-list"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- 看板tabs分类显示 -->
+      <d-tabs [type]="'tabs'" [(activeTab)]="activeTabId" (activeTabChange)="activeTabChange($event)">
+        <d-tab title="全部" tabId="all" id="all">
+          <ng-template dTabContent>
+            <div class="card-project">
+              <!-- -- -->
+              <d-card style="width: 350px">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 16px">
+                  <d-avatar style="vertical-align: middle" [imgSrc]="testImg" [width]="48" [height]="48"></d-avatar>
+                  <div style="font-size: 20px; cursor: pointer" class="icon-star-o"></div>
+                </div>
+                <d-card-header>
+                  <d-card-title>Eric前端精品实践课</d-card-title>
+                </d-card-header>
+                <d-card-actions [align]="'spaceBetween'">
+                  <div class="action-text">更新于08月31日 13:35</div>
+                  <div>
+                    <i class="icon-like card-icon"></i>
+                    <i class="icon-more-operate card-icon"></i>
+                  </div>
+                </d-card-actions>
+              </d-card>
+              <!-- -- -->
+            </div>
+          </ng-template>
+        </d-tab>
+
+        <d-tab title="博客" tabId="tab2" id="tab2">
+          <ng-template dTabContent>
+            <p>这是Tab2的内容</p>
+          </ng-template>
+        </d-tab>
+
+        <d-tab title="备忘" tabId="tab3" id="tab3">
+          <ng-template dTabContent>
+            <p>这是Tab3的内容</p>
+          </ng-template>
+        </d-tab>
+      </d-tabs>
+    </div>
+  </div>
 </app-framework>
