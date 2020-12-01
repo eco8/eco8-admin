@@ -1,11 +1,9 @@
 .e-header {
-  box-sizing: border-box;
   width: 100vw;
   height: 40px;
   padding-right: 10px;
   background: #252b3a;
   color: #a0a2a8;
-  // overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,7 +22,6 @@
   width: 200px;
   height: 100%;
   img {
-    // width: 100%;
     height: 100%;
   }
 }

@@ -1,0 +1,156 @@
+.login-bg {
+  background-color: #e7ecf2;
+}
+
+.login-header {
+  width: 100vw;
+  height: 40px;
+  padding-right: 10px;
+  background: #252b3a;
+  color: #a0a2a8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ul,
+  li {
+    height: 100%;
+    list-style: none;
+    line-height: 40px;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+.login-ctx {
+  width: 100vw;
+  height: calc(100vh - 100px);
+
+  position: relative;
+}
+
+.login-copyright {
+  width: 100vw;
+  height: 60px;
+  padding-right: 10px;
+  background: #252b3a;
+  color: #a0a2a8;
+  text-indent: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ul,
+  li {
+    height: 100%;
+    list-style: none;
+    line-height: 40px;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+.login-box {
+  width: 380px;
+  height: 410px;
+  position: absolute;
+  top: 80px;
+  right: 20%;
+  background-color: #fff;
+  padding: 20px;
+
+  h1 {
+    font-weight: normal;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .header-tips {
+    font-size: 12px;
+    color: #f66f6a;
+    padding-bottom: 20px;
+    a {
+      font-size: 12px;
+      margin-left: 5px;
+      color: #08c;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: #005580;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .loginform-input {
+    width: 100%;
+    height: 32px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #c3c3c3;
+    &:hover,
+    &:focus {
+      border-color: #5e7ce0;
+      background-color: #e8f0fe;
+    }
+  }
+
+  .login-option {
+    display: flex;
+    justify-content: space-between;
+    line-height: 32px;
+    & * {
+      font-size: 12px;
+    }
+  }
+
+  .button-width {
+    padding: 30px 0 20px;
+  }
+
+  .sign-forgotpwd {
+    display: flex;
+    padding-bottom: 30px;
+    span {
+      width: 33%;
+      border-right: 1px solid #dfe1e6;
+      text-align: center;
+      line-height: 1;
+      color: #252b3a;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  .other-accounts {
+    text-align: center;
+    color: #252b3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      width: 220px;
+    }
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 50%;
+      border-top: 1px solid #ddd;
+    }
+  }
+}
+
+::ng-deep .login-option label {
+  font-size: 12px;
+}
+
+::ng-deep .button-width {
+  width: 100%;
+  button {
+    width: 100%;
+  }
+}
