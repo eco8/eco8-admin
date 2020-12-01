@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { NavItem } from './header.vo';
+import { NavItem, SexEnum, UserItem } from './header.vo';
 
 @Component({
   selector: 'e-header',
@@ -21,6 +21,10 @@ export class HeaderComponent implements OnInit {
   ];
   public currentUrl: string = '';
 
+  public showUserMenu: boolean = false;
+
+  public user = new UserItem();
+
   constructor(private router: Router) {
     this.router.events.subscribe(e => {
       if (e instanceof NavigationEnd) {
@@ -29,5 +33,7 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.user.name = 'Eric';
+  }
 }

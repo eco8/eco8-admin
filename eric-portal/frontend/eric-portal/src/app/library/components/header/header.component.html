@@ -23,8 +23,28 @@
   </div>
 
   <!-- 用户菜单 -->
-  <div class="e-user-navigation">用户菜单</div>
+  <div class="e-user-navigation clearfix" (mouseover)="showUserMenu = true" (mouseleave)="showUserMenu = false">
+    <div class="user-nick-name">
+      <d-avatar style="text-align: right" [gender]="user.gender" [name]="user.name"></d-avatar>
+      <span class="username">{{ user.name }}</span>
+    </div>
+
+    <div class="user-menu clearfix" *ngIf="showUserMenu">
+      <ul>
+        <li class="user-menu-item">用户中心</li>
+        <li class="user-menu-item">个人设置</li>
+        <li class="user-menu-item">设置昵称</li>
+        <li class="user-menu-splitline"></li>
+        <li class="user-menu-item">关注我们</li>
+        <li class="user-menu-item">意见反馈</li>
+        <li class="user-menu-splitline"></li>
+        <li class="logout-btn">退出登录</li>
+      </ul>
+    </div>
+  </div>
 
   <!-- 系统导航 -->
-  <div class="e-system-navigation">系统导航</div>
+  <div class="e-system-navigation">
+    <i class="icon icon-help"></i>
+  </div>
 </header>
